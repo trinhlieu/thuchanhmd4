@@ -18,8 +18,10 @@ export class BookListComponent implements OnInit {
 
   getAll() {
     this.bookService.getAllBook().subscribe(res => {
-      console.log(res)
       this.books = res;
+      console.log(this.books)
+      console.log('2331')
+
     })
   }
 
